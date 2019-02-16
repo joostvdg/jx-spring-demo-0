@@ -30,7 +30,7 @@ class DemoApplicationTests {
 		val result = testRestTemplate.getForEntity("/hello", String::class.java)
 		assertNotNull(result)
 		assertEquals(HttpStatus.OK, result?.statusCode)
-		assertEquals(result?.body, "hello world")
+		assertEquals(result?.body, "Hello world")
 	}
 
 	@Test

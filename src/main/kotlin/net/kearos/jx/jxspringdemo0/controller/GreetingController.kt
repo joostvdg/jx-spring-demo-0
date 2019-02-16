@@ -14,6 +14,6 @@ class GreetingController {
 
     @GetMapping("/hello")
     fun helloKotlin(): String {
-        return "hello world"
+        return "Hello world"
     }
 }
